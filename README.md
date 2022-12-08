@@ -17,10 +17,9 @@ Visualization of spatial data in R language can be a powerful tool for exploring
 
 One of the most commonly used packages for visualizing spatial data in R is the `ggplot2` package, which provides a flexible and intuitive framework for creating a variety of different types of plots. `ggplot2` is a part of the `tidyverse` collection (that is why we will load it using `library(tidyverse)` command). 
 
-The second package, `rworldmap` provides tools for plotting data onto global maps. It includes functions for plotting data onto maps of different projections, as well as for plotting latitude and longitude data. The `rworldmap` package also includes functions for working with country and region boundaries, and for adding additional layers of data to maps. We can distinguish three fundamental functions available:
+The second package, `rworldmap` provides tools for plotting data onto global maps. It includes functions for plotting data onto maps of different projections, as well as for plotting latitude and longitude data. The `rworldmap` package also includes functions for working with country and region boundaries, and for adding additional layers of data to maps. We can distinguish the folllowing fundamental functions available:
 * `joinCountryData2Map()` - links your data to the map 
 * `mapCountryData()` - plots a map of country data 
-* `mapGriddedData()` - plots a map of gridded data
 
 
 And these are, among others, one of the packages we will be using today. 
@@ -38,6 +37,17 @@ Keep in mind, that if you haven't downloaded any of these packages, you must use
 ```{r}
 install.packages("rworldmap") 
 ``` 
+
+
+
+
+
+```{r}
+# creates an object "imaginar_join" 
+imaginar_join <- joinCountryData2Map(imaginar,
+                                     joinCode = "NAME",
+                                     nameJoinColumn = "country")
+```
 
 
 
