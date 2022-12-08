@@ -1,0 +1,20 @@
+#swan <- read.csv("cygnus_olor.csv") # reading dataset .csv file
+
+vars <- c("speccode","grid", "season") 
+
+convert <- c("grid")
+
+#libraries
+install.packages("sgo")
+library(tidyverse)          
+library(rworldmap)
+library(sf)
+library(sgo)
+
+brit_nat_grid <-(sgo_ngr_bng(distributions_new2$grid))
+
+brit_nat_grid <-(sgo_bng_ngr(distributions_new2$grid))
+
+print(brit_nat_grid)
+ 
+rm(distributions_new1)
