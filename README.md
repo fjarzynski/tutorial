@@ -20,9 +20,9 @@ To start, you will need to have the ggplot2 package installed and loaded into yo
 library(ggplot2)
 library(ggmap) (PYTANIE CZY ZALACZAC)
 ``` 
-Keep in mind, that if you haven't downloaded any of these packages, you must use install.packages("PACKAGE NAME") command first to install the package. For example, if your R Studio can't find the ggplot2 package, you have to run the following code before executing 'library(ggplo2)':
+Keep in mind, that if you haven't downloaded any of these packages, you must use install.packages("PACKAGE NAME") command first to install the package. For example, if your R Studio can't find the ggplot2 package, you have to run the following code before executing `library(ggplot 2)`:
 
 ```{r}
-install.packages("ggplot2") #
+install.packages("ggplot2") 
 ``` 
 
