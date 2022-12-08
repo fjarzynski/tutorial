@@ -14,7 +14,3 @@ library(sgo)
 brit_nat_grid <-(sgo_ngr_bng(distributions_new2$grid))
 
 brit_nat_grid <-(sgo_bng_ngr(distributions_new2$grid))
-
-print(brit_nat_grid)
- 
-rm(distributions_new1)
